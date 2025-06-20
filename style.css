@@ -1,0 +1,178 @@
+body{
+   background-color: rgb(129, 186, 233);
+}
+
+#hero{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------------------------- CLASE CONTAINER*/
+.container{
+   
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    box-shadow: rgba(83, 67, 13, 0.16) 0px 1px 4px, rgba(2, 55, 90, 0.322) 0px 0px 0px 3px;
+}
+
+
+/* ---------------------------------------------------------BOTON INICIAL*/
+
+
+.button-continue {
+  background:rgb(129, 186, 233);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em rgb(129, 186, 233);
+  overflow: hidden;
+  position: relative;
+  height: 2.2em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.button-continue .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.7em;
+  width: 2.0em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(129, 186, 233);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.button-continue:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.button-continue .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #000000;
+}
+
+.button-continue:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.button-continue:active .icon {
+  transform: scale(0.95);
+}
+
+
+/* ---------------------------------------------------------OCULTANDO CONTAINER INICIALMENTE */
+#container-request, #container-end{
+    display: none;
+} /* ---------------------------------------------------------*/
+
+
+
+p{
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.formField{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+/*-------------------------------------------------------------Inputs*/
+
+.group {
+  display: flex;
+  line-height: 30px;
+  align-items: center;
+  position: relative;
+  width: 200px; 
+  margin-bottom: 2%;
+}
+
+.input {
+  width: 100%; 
+  height: 45px;
+  line-height: 30px;
+  padding: 0 5rem;
+  padding-left: 3rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f8fafc;
+  color: #0d0c22;
+  transition: .5s ease;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.input:focus, input:hover {
+  outline: none;
+  border-color:  rgb(129, 186, 233);
+  background-color: #fff;
+  box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+.icon-user , .icon-num {
+  position: absolute;
+  left: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+/*------------------------------------------------- Oculta spinners en Chrome, Safari, Edge y Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Oculta spinners en Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/*------------------------------------------------------------Container final*/
+.container-end{
+    display: none;
+   
+}
+
+.content-container-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+}
+
