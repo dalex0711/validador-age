@@ -1,5 +1,5 @@
 
-//Obteniendo valores del DOM
+//Getting values ​​from the DOM
 const containerHero = document.querySelector('#container-hero');
 const containerForm = document.querySelector('#container-request');
 const containerAdult = document.querySelector('#container-end');
@@ -18,21 +18,21 @@ let refresh = document.getElementById('button-refresh');
 
 
 
-// Muestra el formulario al hacer clic en el botón inicial
+// Display the form when the initial button is clicked
 document.getElementById('button-hero').addEventListener('click', function() {
    containerHero.style.display = 'none';
    containerForm.style.display = 'block';
    
 });
 
-// Manejo del envío del formulario
+// Handling form submission
 
 form.addEventListener('submit', function(e) {
     e.preventDefault(); 
     getInputValues();
 }); 
 
-// Función principal que gestiona los datos del formulario
+// Main function that manages the form data
 function getInputValues() {
     const name = nameInput.value;
     const age = parseInt(ageInput.value);
@@ -59,16 +59,16 @@ function getInputValues() {
   
 }
 
-// Muestra el mensaje general y oculta las demás vistas
+// Show the general message and hide the other views
 function adult(name, age){
-    contenidoH2.innerText = `Helli ${name}. You are ${age} years old`;
+    contenidoH2.innerText = `Hello ${name}. You are ${age} years old`;
     containerHero.style.display = 'none';
     containerForm.style.display = 'none';
     containerAdult.style.display = 'block';
 
 }
 
-// Recarga la página al hacer clic en el botón de reinicio
+// Reload the page when the reset button is clicked
 document.getElementById('button-refresh').addEventListener('click', function() {
     location.reload();
 });
