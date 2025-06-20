@@ -1,33 +1,33 @@
-# Verificador de Edad
+# Age Checker
 
-Este es un proyecto web interactivo que permite al usuario saber si es mayor o menor de edad, mostrando un mensaje personalizado según el resultado.
+This is an interactive web project that allows the user to determine whether they are over or under 18, displaying a personalized message based on the result.
 
-## Tecnologías utilizadas
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript (vanilla)
 
-## Funcionalidades
+## Features
 
-- Pantalla de bienvenida.
-- Formulario para ingresar nombre y edad.
-- Validación de campos vacíos y edad no numérica.
-- Mensaje personalizado según si el usuario es mayor o menor de edad.
-- Botón para reiniciar la aplicación.
+- Welcome screen.
+- Form to enter name and age.
+- Validation of empty fields and non-numeric age.
+- Personalized message based on whether the user is over or under 18.
+- Button to restart the application.
 
-##  ¿Cómo funciona?
+## How does it work?
 
-1. El usuario inicia desde una pantalla de bienvenida.
-2. Al hacer clic en "Continue", aparece un formulario.
-3. Tras ingresar el nombre y la edad, se muestra un mensaje dependiendo de si el usuario es mayor o menor de 18 años.
-4. El botón "Go back" recarga la página para comenzar de nuevo.
+1. The user starts from a welcome screen.
+2. Clicking "Continue" displays a form.
+3. After entering the name and age, a message is displayed depending on whether the user is over or under 18.
+4. The "Back" button reloads the page to start over.
 
-## ¿Por qué se usaron inputs en lugar de prompt?
+## Why were inputs used instead of prompts?
 
-Aunque el uso de `prompt()`era una alternativa, se optó por inputs en formulario porque permiten una mejor experiencia de usuario, control visual completo, validaciones más seguras y una interfaz moderna que se asemeja más a aplicaciones reales.
+Although using `prompt()` was an alternative, form inputs were chosen because they allow for a better user experience, complete visual control, more secure validations, and a modern interface that more closely resembles real-world applications.
 
-##  Estructura de archivos
+## File Structure
 .
 ├── index.html
 ├── readme.md
